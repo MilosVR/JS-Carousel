@@ -1,0 +1,82 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.carousel{
+    width: 80%;
+    height: 600px;
+    position: relative;
+    margin: 0 auto;
+}
+.carousel img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.carousel_slider{
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+.carousel_image_collection{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    height: 100%;
+    transition: transform 500ms ease-in;
+}
+.carousel_image_item{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+.left_arrow {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 30px;
+    height: 30px;
+    background-image: url(/assets/leftArrow.png);
+    background-size: 100% 100%;
+    cursor: pointer;
+    left: -35px;
+}
+.right_arrow{   
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 30px;
+    height: 30px;
+    background-image: url(/assets/rightArrow.png);
+    background-size: 100% 100%;
+    cursor: pointer;
+    right: -35px;
+}
+.carousel_dots{
+    background: whitesmoke;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dots_collection{
+    display: flex;
+    margin: 0px;
+}
+.dots_item{
+    list-style: none;
+    width: 15px;
+    height: 15px;
+    background: lightgray;
+    border-radius: 50%;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.current_dot{
+    background: gray
+}
+.isHidden{
+    display: none;
+}
